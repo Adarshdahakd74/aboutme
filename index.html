@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Adarsh dhakad - web dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Announcement banner -->
+  <div class="announcement" id="announcement">
+    <p>Currently taking on 2 new projects for Q4 — <a href="#contact">say hello</a></p>
+    <button class="announcement-close" id="announcementClose" aria-label="Dismiss announcement">✕</button>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="#top" class="logo">Dhakad<span>.development</span></a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#photography">photography</a>
+      </nav>
+
+      <a href="#contact" class="btn-contact">Contact</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="hero-visual" aria-hidden="true">
+        <div class="portrait-frame"> <img src="profile.jpg" alt="Portrait" class="portrait-art" />
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">websites  Design... </p>
+        <h1>
+          I'm Adarsh Dhakad<br/>
+          I design products<br/>
+          <span class="accent">people actually enjoy using.</span>
+        </h1>
+        <p class="hero-sub">
+          i have one year experience for website development 
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn-primary">See the work</a>
+          <a href="#contact" class="btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-year">2023 — Now</span>
+          <h3>Senior Product Designer, Fintech studio</h3>
+          <p>Leading design for a small-business banking app used by 40k+ merchants.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2020 — 2023</span>
+          <h3>Product Designer, Travel startup</h3>
+          <p>Rebuilt the booking flow end to end, cutting drop-off by a third.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2018 — 2020</span>
+          <h3>UI Designer, Freelance</h3>
+          <p>Websites and mobile UI for a dozen small studios across Northern Italy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section section-dark">
+      <h2 class="section-title">Selected Work</h2>
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="work-thumb thumb-1"></div>
+          <h3>Ledger — banking for freelancers</h3>
+          <p>App design system + onboarding</p>
+        </article>
+        <article class="work-card">
+          <div class="work-thumb thumb-2"></div>
+          <h3>Wayfare — trip planning</h3>
+          <p>Booking flow redesign</p>
+        </article>
+        <article class="work-card">
+          <div class="work-thumb thumb-3"></div>
+          <h3>Nota — voice notes app</h3>
+          <p>0 → 1 product design</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Photography -->
+    <section id="photography" class="section">
+      <h2 class="section-title">Photography</h2>
+      <p class="section-sub">On weekends I shoot film around the Alps. A small selection below.</p>
+      <div class="photo-grid">
+        <img src="photo1.jpeg" alt="banaras arti" class="photo" />
+        <img src="photo2.jpeg" alt="divine street" class="photo" />
+        <img src="photo3.jpeg" alt="revier reflection" class="photo" />
+        <img src="photo4.jpeg" alt="narrow space" class="photo" />
+      </div>
+    </section>
+    <!-- Video Work -->
+<section id="video-work" class="section section-dark">
+    <h2 class="section-title">Video Work</h2>
+    <p class="section-sub">Motion and product walkthroughs I've directed or edited.</p>
+    <div class="video-grid">
+      <div class="video-card">
+        <video class="video-thumb" src="video1.mp4" poster="video1-poster.jpg" loop playsinline></video>
+        <div class="video-info">
+          <h3>Ledger — App Walkthrough</h3>
+          <p>Product demo, 45s</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video class="video-thumb" src="video2.mp4" poster="video2-poster.jpg" loop playsinline></video>
+        <div class="video-info">
+          <h3>Wayfare — Brand Film</h3>
+          <p>Brand story, 1m 20s</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <video class="video-thumb" src="video3.mp4" poster="video3-poster.jpg" loop playsinline></video>
+        <div class="video-info">
+          <h3>Behind the Design</h3>
+          <p>Process reel, 2m</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-dark contact-section">
+      <h2 class="section-title">Let's work together</h2>
+      <p class="section-sub">Tell me about your project — I read every message.</p>
+      <form id="contactForm" class="contact-form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Adarsh . Built with care.</p>
+    <div class="footer-links">
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
